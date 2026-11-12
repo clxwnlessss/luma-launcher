@@ -8,3 +8,5 @@ node_modules/
 release/
 preview-electron*.png
 preview-luma*.png
+preview.png
+github-published*.jpg

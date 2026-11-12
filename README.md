@@ -5,7 +5,9 @@ Full **Russian / English** interface, animated styling, and a regular Windows in
 
 ## Download / Скачать
 
-Use GitHub Releases when available:
+**[Download the Windows installer / Скачать установщик](https://github.com/clxwnlessss/luma-launcher/releases/download/v0.3.0/LumaLauncher-Setup-0.3.0.exe)**
+
+[Portable application](https://github.com/clxwnlessss/luma-launcher/releases/download/v0.3.0/LumaLauncher-0.3.0-Portable.exe) · [Release notes and SHA-256 checksums](https://github.com/clxwnlessss/luma-launcher/releases/tag/v0.3.0)
 
 - `LumaLauncher-Setup-0.3.0.exe` — normal installer with desktop and Start menu shortcuts, RU / EN installer languages.
 - `LumaLauncher-0.3.0-Portable.exe` — portable application.
