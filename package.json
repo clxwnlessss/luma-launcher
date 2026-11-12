@@ -1,0 +1,42 @@
+{
+  "name": "luma-launcher",
+  "version": "0.3.0",
+  "description": "Your own little universe. An independent Roblox launcher.",
+  "author": "Luma Launcher contributors",
+  "license": "MIT",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/library.test.cjs tests/roblox.test.cjs",
+    "test:ui": "node scripts/ui-check.cjs",
+    "test:live": "electron scripts/live-check.cjs",
+    "build": "electron-builder --win nsis portable --x64",
+    "pack": "electron-builder --dir --win --x64"
+  },
+  "devDependencies": {
+    "electron": "45.3.1",
+    "electron-builder": "26.18.0",
+    "playwright": "^1.56.0"
+  },
+  "build": {
+    "appId": "app.luma.launcher",
+    "productName": "Luma Launcher",
+    "directories": { "output": "release" },
+    "files": ["electron/**/*", "src/**/*", "assets/**/*", "package.json", "LICENSE"],
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": ["nsis", "portable"],
+      "signExecutable": false,
+      "artifactName": "LumaLauncher-${version}-Portable.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "installerLanguages": ["en_US", "ru_RU"],
+      "displayLanguageSelector": true,
+      "artifactName": "LumaLauncher-Setup-${version}.exe"
+    }
+  }
+}

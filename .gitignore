@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+.venv/
+node_modules/
+release/
+preview-electron*.png
+preview-luma*.png
